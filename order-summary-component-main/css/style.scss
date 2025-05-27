@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+$Pale-blue: hsl(225, 100%, 94%);
+$Bright-blue: hsl(245, 75%, 52%);
+$Very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:780px;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+ 
+}
+
+
+.container {
+  max-width: 500px;
+  background-color:$Very-pale-blue;
+  height: 80%;
+  border-radius: 20px;
+  overflow: hidden;
+
+  
+  .image {
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    margin-top: 2rem;
+    width: 400px;
+    text-align: center;
+    padding: 1rem 3rem;
+    transform: translateX(25px);
+
+    h1 {
+      font-weight: 800;
+      font-size: 2rem;
+    }
+    p {
+      margin-top: 1rem;
+      line-height: 1.4rem;
+      font-weight: 600px;
+    }
+  }
+  .audio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: $Very-pale-blue;
+    padding: 12px 20px;
+    max-width: 350px;
+    transform: translateX(50px);
+    .flex {
+      display: flex;
+      img {
+        width: 50px;
+        background-color: $Very-pale-blue;
+        border-radius: 50px;
+        margin-right: 8px;
+      }
+
+      .audio-content {
+        h3 {
+          font-size: 18px;
+          font-weight: 900;
+        }
+        h5 {
+          font-weight: normal;
+        }
+      }
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 800;
+      color: $Dark-blue;
+    }
+  }
+ .footer{
+   margin-top: 20px;
+   transform: translateX(50px);
+   max-width: 350px;
+
+  .button-one{
+     button{
+        width: 100%;
+        padding: 12px 20px;
+        margin-bottom: 12px;
+        background-color: $Bright-blue;
+        border: 0;
+        color: white;
+        font-size: 1rem;
+        border-radius: 8px;
+     }
+  }
+
+  .button-two{
+     button{
+        width: 100%;
+        padding: 12px 20px;
+        border: none;
+        background-color:$Very-pale-blue;
+        border-radius: 8px;
+        font-size:16px;
+        font-weight: 600;
+     }
+
+  }
+ }
+
+}
+
